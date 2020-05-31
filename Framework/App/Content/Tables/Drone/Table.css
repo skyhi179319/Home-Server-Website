@@ -1,0 +1,42 @@
+.TableDiv{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+.DataTable{
+    width: auto;
+    height: inherit;
+    background-color: lightblue;
+}
+.TableHeaders{
+    border: 2px solid red;
+}
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+td > button{
+    border: 2px solid gold;
+    border-radius: 16px;
+    margin-left: 3px;
+}
+td > button:focus{
+    border: 2px solid gold;
+    border-radius: 16px;
+}
+td > button:hover{
+    border: 2px solid goldenrod;
+    background-color: silver;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #6c6ade}
+th {
+    background-color: #4CAF50;
+    color: white;
+}

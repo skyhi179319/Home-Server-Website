@@ -1,0 +1,138 @@
+.FullProgram{
+	width: 872px;
+	height: 300px;
+	background-color: ghostwhite;
+	border: 1px solid grey;
+	border-radius: 16px;
+	margin: auto;
+}
+.FullProgram > .Content-Header{
+	float: right;
+	width: 88px;
+	height: 24px;
+	background-color: whitesmoke;
+	border: 2px solid slategrey;
+	border-radius: 16px;
+	border-bottom-right-radius: 0px;
+	border-top: none;
+	border-right: none;
+	margin: auto;
+}
+.FullProgram > .Content-Header > .Program-Close{
+	float: right;
+	background-color: lightcoral;
+	border: 2px solid firebrick;
+	border-radius: 16px;
+	height: 20px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.FullProgram > .Content-Header > .Program-Close:hover{
+	background-color: crimson;
+	box-shadow: 0px 3px 7px 0px lightcoral;
+}
+.FullProgram > .Content-Header > .Program-Minimize{
+	float: right;
+	background-color: lightblue;
+	border: 2px solid darkblue;
+	border-radius: 16px;
+	height: 20px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.FullProgram > .Content-Header > .Program-Minimize:hover{
+	background-color: lightskyblue;
+	box-shadow: 0px 3px 7px 0px lightblue;
+}
+.FullProgram > .Content-Header > .Program-Maximize{
+	float: right;
+	background-color: lightgreen;
+	border: 2px solid darkgreen;
+	border-radius: 16px;
+	height: 20px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.FullProgram > .Content-Header > .Program-Maximize:hover{
+	background-color: limegreen;
+	box-shadow: 0px 3px 7px 0px lightgreen;
+}
+/* Minimize */
+.Program-Animation-Minimize{
+	animation-name: Main-Program-Minimize;
+	animation-duration: 4s;
+}
+@keyframes Main-Program-Minimize {
+	from {height: 300px;}
+	to {height: 26px;}
+	from{width: 872px;}
+	to{width: 90px;}
+}
+/* Maximize */
+.Program-Animation-Maximize{
+	animation-name: Main-Program-Maximize;
+	animation-duration: 4s;
+}
+@keyframes Main-Program-Maximize {
+	from {height: 26px;}
+	to {height: 300px;}
+	from{width: 90px;}
+	to{width: 872px;}
+}
+/* SidePanel */
+.FullProgram > .SidePanel{
+	float: left;
+	height: 240px;
+	background-color: cornflowerblue;
+	border: 1px solid red;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+.FullProgram > .SidePanel > .Content-Header{
+	display: flex;
+	width: 126px;
+	height: 24px;
+	background-color: whitesmoke;
+	border: 2px solid slategrey;
+	border-radius: 16px;
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+.FullProgram > .SidePanel > .Content-Header > .Header{
+	float: left;
+	font-size: 12px;
+	margin-top: 7px;
+	margin-left: 8px;
+}
+.FullProgram > .SidePanel > .Content-Header > .Menu-Close{
+	height: 20px;
+	background-color: lightcoral;
+	border: 2px solid firebrick;
+	border-radius: 16px;
+	margin-top: 2px;
+	margin-left: 62px;
+}
+.FullProgram > .SidePanel > .Content-Header > .Menu-Close:hover{
+	background-color: crimson;
+	box-shadow: 0px 3px 7px 0px lightcoral;
+}
+.Menu-Close-Animation-Disappear{
+	animation-name: Main-SidePanel-Disappear;
+	animation-duration: 4s;
+}
+@keyframes Main-SidePanel-Disappear {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+.FullProgram > .MainWindow{
+	width: 525px;
+	height: 274px;
+	border: 2px solid gold;
+	margin: auto;
+    margin-top: 20px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}

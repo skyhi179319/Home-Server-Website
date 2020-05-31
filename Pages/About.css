@@ -1,0 +1,35 @@
+.Profiles{
+    display: flex;
+    margin-top: 5px;
+}
+.Profiles > .Cards{
+    width: 226px;
+    height: 214px;
+    background-color: whitesmoke;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin: auto;
+}
+.Profiles > .Cards > img{
+    width: 150px;
+    height: 100px;
+    margin-top: 6px;
+    margin-left: 2.5em;
+}
+.Profiles > .Cards > .Cards-Container{
+    width: 185px;
+    height: 86px;
+    background-color: lavender;
+    border: 2px solid navy;
+    border-radius: inherit;
+    margin: auto;
+}
+.Profiles > .Cards > .Cards-Container > h4,p{
+    text-align: center;
+}
+.Profiles > .Cards > .Cards-Container > h4{
+    color: mediumblue;
+}
+.Profiles > .Cards > .Cards-Container > p{
+    color: royalblue;
+}

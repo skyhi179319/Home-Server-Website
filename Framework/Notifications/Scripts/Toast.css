@@ -1,0 +1,131 @@
+/* Toast Box */
+.Toast-Box {
+    background-color: lightgrey;
+    width: 220px;
+    height: 122px;
+    /*position: fixed;*/
+    padding-top: 5px;
+    /*bottom: 20px;*/
+}
+/* Animations */
+.Toast-Box-Animation-Appear{
+    animation-name: Main-Toast-Box-Appear;
+    animation-duration: 4s;
+}
+@keyframes Main-Toast-Box-Appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.Toast-Box-Animation-Disappear{
+    animation-name: Main-Toast-Box-Disappear;
+    animation-duration: 4s;
+}
+@keyframes Main-Toast-Box-Disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+/* Header */
+.Toast-Box > .Toast-Content-Header > .Content-Header{
+    border: 2px solid slategrey;
+    background-color: whitesmoke;
+    margin: auto;
+    width: 210px;
+    height: 28px;
+}
+.Toast-Box > .Toast-Content-Header > .Content-Header > .Header{
+    float: left;
+    margin-top: 7px;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.Toast-Box > .Toast-Content-Header > .Content-Header > .Toast-Box-Close{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: lightcoral;
+    border: 2px solid firebrick;
+}
+.Toast-Box > .Toast-Content-Header > .Content-Header > .Toast-Box-Close:hover{
+    background-color: crimson;
+    box-shadow: 0px 3px 7px 0px lightcoral;
+}
+/* Body */
+.Toast-Box > .Toast-Content{
+    border: 2px solid darkslategrey;
+    border-top: none;
+    background-color: ghostwhite;
+    margin: auto;
+    width: 210px;
+    padding-top: 1px;
+}
+/* Non-Group */
+.Toast-Box > .Toast-Content > .Single{
+    display: flex;
+    border: 1px solid red;
+    border-bottom: none;
+    width: 195px;
+    height: 80px;
+    margin: auto;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info{
+    display: flex;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box{
+    display: inline-block;
+    margin: auto;
+    margin-left: 34px;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box > p{
+    text-align: center;
+    font-size: 10px;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box > .Device{
+    font-size: 12px;
+    color: green;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box > .Time{
+    font-size: 11px;
+    color: deepskyblue;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box > .Date{
+    color: dodgerblue;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box > .Purpose{
+    color: crimson;
+}
+.Toast-Box > .Toast-Content > .Single > .Single-Info > .Box > .Event{
+    color: darkred;
+}
+/* Group */
+.Toast-Box > .Toast-Content > .Group{
+    display: flex;
+    border: 1px solid red;
+    border-bottom: none;
+    width: 195px;
+    height: 80px;
+    margin: auto;
+}
+.Toast-Box > .Toast-Content > .Group > .Group-Divider{
+    width: 5px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: lightgrey;
+}
+.Toast-Box > .Toast-Content > .Group > #ImportInfo1 > .Info-Group{
+    width: 100px;
+    height: 68px;
+}
+.Toast-Box > .Toast-Content > .Group > #ImportInfo1 > .Info-Group > p{
+    text-align: center;
+    font-size: 10px;
+}
+.Toast-Box > .Toast-Content > .Group > #ImportInfo1 > .Info-Group > .Toast-NeedToDO{
+    color: firebrick;
+}
+.Toast-Box > .Toast-Content > .Group > #ImportInfo1 > .Info-Group > .Toast-NewUpdates{
+    color: darkgreen;
+}
+.Toast-Box > .Toast-Content > .Group > #ImportInfo1 > .Info-Group > .Toast-OldUpdates{
+    color: green;
+}

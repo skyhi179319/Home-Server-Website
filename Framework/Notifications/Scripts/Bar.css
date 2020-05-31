@@ -1,0 +1,163 @@
+/* Box */
+.Notifications-Bar{
+    position: absolute;
+    height: 164px;
+    width: 500px;
+    margin: auto;
+    margin-left: 25em;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 2.5px;
+    bottom: 8px;
+    border: 2px solid navy;
+    background-color: cornsilk;
+}
+/* Animations */
+/* Appear Ahd Disappear*/
+.Notifications-Box-Animation-Appear{
+    animation-name: Main-Notifications-Box-Appear;
+    animation-duration: 4s;
+}
+@keyframes Main-Notifications-Box-Appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.Notifications-Box-Animation-Disappear{
+    animation-name: Main-Notifications-Box-Disappear;
+    animation-duration: 4s;
+}
+@keyframes Main-Notifications-Box-Disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+/* Minimize And Maximize */
+/* Minimize */
+.Notifications-Box-Animation-Minimize{
+    animation-name: Main-Notifications-Box-Minimize;
+    animation-duration: 4s;
+}
+@keyframes Main-Notifications-Box-Minimize {
+    from {height: 164px;}
+    to {height: 22px;}
+}
+.Notifications-Box-Animation-Maximize{
+    animation-name: Main-Notifications-Box-Maximize;
+    animation-duration: 4s;
+}
+@keyframes Main-Notifications-Box-Maximize {
+    from {height: 22px;}
+    to {height: 164px;}
+}
+/* Header */
+.Notifications-Bar > .Notifications-Content-Header{
+    margin-top: -12px;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header{
+    border: 2px solid slategrey;
+    background-color: whitesmoke;
+    margin: auto;
+    width: 440px;
+    height: 28px;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Header{
+    float: left;
+    margin-top: 7px;
+    margin-left: 8px;
+    font-size: 12px;
+}
+/* Buttons */
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Close{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: lightcoral;
+    border: 2px solid firebrick;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Close:hover{
+    background-color: crimson;
+    box-shadow: 0px 3px 7px 0px lightcoral;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Minimize{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Minimize:hover{
+    background-color: lightskyblue;
+    box-shadow: 0px 3px 7px 0px lightblue;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Maximize{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Maximize:hover{
+    background-color: limegreen;
+    box-shadow: 0px 3px 7px 0px lightgreen;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Light-Grey{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: gold;
+    border: 2px solid darkgoldenrod;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Light-Grey:hover{
+    background-color: darkgoldenrod;
+    box-shadow: 0px 3px 7px 0px gold;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Dark-Grey{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: gold;
+    border: 2px solid darkgoldenrod;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Dark-Grey:hover{
+    background-color: darkgoldenrod;
+    box-shadow: 0px 3px 7px 0px gold;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Normal{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: gold;
+    border: 2px solid darkgoldenrod;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Box-Normal:hover{
+    background-color: darkgoldenrod;
+    box-shadow: 0px 3px 7px 0px gold;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Insert-Button{
+    float: left;
+    margin-top: 3px;
+    margin-left: 45px;
+    background-color: lightslategray;
+    border: 2px solid slategrey;
+}
+.Notifications-Bar > .Notifications-Content-Header > .Content-Header > .Notifications-Insert-Button:hover{
+    background-color: slategrey;
+    box-shadow: 0px 3px 7px 0px lightslategray;
+}
+.Notifications-Header-Button-Text-Effects{
+    animation-name: Main-Header-Button-Text-Effects;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes Main-Header-Button-Text-Effects {
+    from {text-shadow: 2px 2px 5px red;}
+    to {text-shadow: 2px 2px 5px blue;}
+}
+/* Content */
+.Notifications-Bar > .Notifications-Bar-Content{
+    position: relative;
+    display: flex;
+    width: 440px;
+    margin-top: 8px;
+    margin: auto;
+}

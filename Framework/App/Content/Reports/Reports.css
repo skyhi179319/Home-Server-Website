@@ -1,0 +1,28 @@
+.Report-Container{
+    width: 260px;
+    height: 216px;
+    border: 2px solid darkgoldenrod;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 10px;
+}
+.Report-Container > .Report{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    margin-top: 8px;
+}
+.Report-Container > .Report > .Report-Group{
+    width: 200px;
+    height: 150px;
+    border: 2px solid goldenrod;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Report-Container > .Report > .Report-Group > p{
+    color: darkgreen;
+    font-size: 13px;
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+/* Navbar container */
+body{
+    margin: 0;
+}
+.Navbar {
+    overflow: hidden;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#dc9d2c61);
+}
+
+.Navbar > a {
+    font-size: 14px;
+    color: maroon;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    padding: 14px 16px;
+}
+.Navbar > a:hover{
+    background-image: linear-gradient(100deg,#fbffb7d6,#dc9d2c61,#fbffb7d6);
+    border: 1px solid;
+    border-color: #e9ecef #e9ecef #dee2e6;
+    border-bottom: none;
+}
+
+/* The dropdown container */
+.Dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.Dropdown .Dropdown-Link {
+    background-color: inherit;
+    color: maroon;
+    font-size: 14px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.Dropdown-Content {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.Dropdown-Content a {
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#dc9d2c61);
+    color: maroon;
+    font-size: 14px;
+    height: 10px;
+    text-decoration: none;
+    text-align: left;
+    padding: 12px 16px;
+    display: block;
+    float: none;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.Dropdown-Content a:hover {
+    background-image: linear-gradient(100deg,#fbffb7d6,#dc9d2c61,#fbffb7d6);
+    border: 1px solid;
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+/* Show the dropdown menu on hover */
+.Dropdown:hover .Dropdown-Content {
+    display: block;
+}

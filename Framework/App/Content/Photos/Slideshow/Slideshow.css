@@ -1,0 +1,35 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 426px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  margin-top: 1px;
+  border: 1px solid darkorange
+}
+
+img{
+    width: 416px;
+    height: 252px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+/* Fading animation */
+.MainFade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
