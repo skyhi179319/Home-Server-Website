@@ -1,11 +1,11 @@
 <link rel="Stylesheet" href="http://127.0.0.1/Home-Server-Website/Framework/Notifications/Scripts/Toast.css">
 <script src="http://127.0.0.1/Home-Server-Website/Framework/Notifications/Scripts/Toast.js"></script>
 <body>
-<div class="Toast-Box Toast-Box-Animation-Appear" id="Toast_Box_Drone">
+<div class="Toast-Box Toast-Box-Animation-Appear" id="Toast-Box-Drone">
     <div class="Toast-Content-Header">
         <div class="Content-Header">
             <p class="Header">Drone</p>
-            <button class="Toast-Box-Close" onclick="DeleteToastBox('Toast_Box_Drone')">
+            <button class="Toast-Box-Close" id="Close-Drone-Toast">
                 <span>&times;</span>
             </button>
         </div>

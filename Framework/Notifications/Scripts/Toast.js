@@ -9,3 +9,11 @@ function DeleteToastBox(element){
     }
     setTimeout(RemoveBox,4000)
 }
+// Jquery Buttons
+// Menu Buttons
+$("#Close-Updates-Toast").click(function() {
+    DeleteToastBox("Toast-Box-Updates")
+});
+$("#Close-Drone-Toast").click(function() {
+    DeleteToastBox("Toast-Box-Drone")
+});

@@ -39,7 +39,7 @@ if ($result1->num_rows > 0) {
         $Event_Name = $row1['Event_Name'];
         $Date = $row1['Date'];
         $Format = new DateTime($Date);
-        echo "<tr>";
+        echo "<tr class='TableRows'>";
         echo "<td>$Device</td>";
         echo "<td>$Device_Runtime</td>";
         echo "<td>$OwnedBy</td>";
@@ -50,7 +50,7 @@ if ($result1->num_rows > 0) {
         echo  "</td>";
         echo "</tr>";
     }
-    echo "<tr>";
+    echo "<tr class='TableRows'>";
     echo "<td colspan='6'><button id='ShowDropdownTable'>Show Results</button><button id='HideDropdownTable'>Hide Results</button></td>";
     echo  "</tr>";
     // table
@@ -64,7 +64,7 @@ if ($result1->num_rows > 0) {
             $Event_Name2 = $row2['Event_Name'];
             $Date2 = $row2['Date'];
             $Format2 = new DateTime($Date2);
-            echo "<tr class='TableResults'>";
+            echo "<tr class='TableResults TableRows'>";
             echo "<td>$Device2</td>";
             echo "<td>$Device_Runtime2</td>";
             echo "<td>$OwnedBy2</td>";
@@ -78,7 +78,7 @@ if ($result1->num_rows > 0) {
     }
 }
 else {
-    echo "<tr>";
+    echo "<tr class='TableRows'>";
     # colspan is full table
     echo "<td colspan='6'>0 results</td>";
     echo "</tr>";

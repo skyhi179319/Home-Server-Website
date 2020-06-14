@@ -3,11 +3,11 @@
 <script src="http://127.0.0.1/Home-Server-Website/Framework/Notifications/Scripts/Toast.js"></script>
 <script src="http://127.0.0.1/Home-Server-Website/Framework/Notifications/Scripts/Update.js"></script>
 <body>
-    <div class="Toast-Box Toast-Box-Animation-Appear" id="Toast_Box_Updates">
+    <div class="Toast-Box Toast-Box-Animation-Appear" id="Toast-Box-Updates">
         <div class="Toast-Content-Header">
             <div class="Content-Header">
                 <p class="Header">Updates</p>
-                <button class="Toast-Box-Close" onclick="DeleteToastBox('Toast_Box_Updates')">
+                <button class="Toast-Box-Close" id="Close-Updates-Toast">
                     <span>&times;</span>
                 </button>
             </div>

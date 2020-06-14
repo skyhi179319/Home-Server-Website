@@ -5,7 +5,7 @@
     <div class="Notifications-Content-Header">
         <div class="Content-Header" id="Box-Header">
             <p class="Notifications-Header">Notifications</p>
-            <button class="Notifications-Box-Close" onclick="DeleteNotificationBox('Notifications-Box')">
+            <button class="Notifications-Box-Close" id="Close-Notification-Box">
                 <span>&times;</span>
             </button>
             <button class="Notifications-Box-Minimize" id="DisableMinimizeButton" onclick="MinimizeBox()">
@@ -14,17 +14,17 @@
             <button class="Notifications-Box-Maximize" id="DisableMaximizeButton" onclick="MaximizeBox()">
                 <span>+</span>
             </button>
-            <button class="Notifications-Box-Light-Grey" onclick="Display_Mode('Light-Grey')">
+            <button class="Notifications-Box-Light-Grey" id="Display-Mode-Light-Grey">
                 <span id="Text-Shadow-Effect-Button1">LG</span>
             </button>
-            <button class="Notifications-Box-Dark-Grey" onclick="Display_Mode('Dark-Grey')">
+            <button class="Notifications-Box-Dark-Grey" id="Display-Mode-Dark-Grey">
                 <span id="Text-Shadow-Effect-Button2">DG</span>
             </button>
-            <button class="Notifications-Box-Normal" onclick="Display_Mode('Normal')">
+            <button class="Notifications-Box-Normal" id="Display-Mode-Normal">
                 <span id="Text-Shadow-Effect-Button3">N</span>
             </button>
             <!-- Iframe Appear Button -->
-            <button class="Notifications-Insert-Button" onclick="InsertNotificationFrame()">Insert</button>
+            <button class="Notifications-Insert-Button" id="Insert-Notification">Insert</button>
         </div>
     </div>
     <div class="Notifications-Bar-Content" id="Box-Content">

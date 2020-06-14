@@ -4,13 +4,13 @@ body{
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background-image: linear-gradient(lawngreen, limegreen);
+  background-image: linear-gradient(#dc9d2c61, #fbffb7d6,#dc9d2c61);
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(limegreen, lawngreen);
+  background-image: linear-gradient(#fbffb7d6, #dc9d2c61,#fbffb7d6);
   border-radius: 10px;
 }

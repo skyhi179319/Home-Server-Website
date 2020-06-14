@@ -19,9 +19,12 @@
                 <div id="Load-Event-Image-Table">Images</div>
                 <ul>
                     <li>
-                        <div><a href="http://127.0.0.1/Home-Server-Website/App/Content/Tables/Images/Search-By/Event.php" target="_blank">Event</a></div>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Images/Search-By/Event.php" target="_blank">Event</a></div>
                     </li>
                 </ul>
+            </li>
+            <li>
+                <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Admin/Inventory/Table.php" target="_blank">All INV</a></div>
             </li>
         </ul>
     </li>
@@ -37,11 +40,23 @@
         <div>Forms</div>
         <ul>
             <li>
-                <div><a href="http://127.0.0.1/Home-Server-Website/App/Content/Forms/Devices/Form.php" target="_blank">Insert Record</a></div>
+                <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Devices/Form.php" target="_blank">Insert Record</a></div>
             </li>
             <li>
                 <div><a href="http://127.0.0.1/Home-Server-Website/Framework/Management/Form.php" target="_blank">Management</a></div>
             </li>
+            <li>
+                <div>Inventory</div>
+                <ul>
+                    <li>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Inventory/Form.php" target="_blank">Inventory</a></div>
+                    </li>
+                    <li>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Orders/Form.php" target="_blank">Orders</a></div>
+                    </li>
+                </ul>
+            </li>
+
         </ul>
     </li>
     <li>
@@ -54,7 +69,7 @@
                 <div id="Load-Event-Slideshow">Slideshow</div>
                 <ul>
                     <li>
-                        <div><a href="http://127.0.0.1/Home-Server-Website/App/Content/Photos/Slideshow/Full-Screen/Slideshow.php">Fullscreen</a></div>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Photos/Slideshow/Full-Screen/Slideshow.php" target="_blank">Fullscreen</a></div>
                     </li>
                 </ul>
             </li>

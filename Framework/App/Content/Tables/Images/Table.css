@@ -11,7 +11,8 @@
     background-color: lightblue;
 }
 .TableHeaders{
-    border: 2px solid red;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#dc9d2c61);
+    background-color: tan;
 }
 table {
     border-collapse: collapse;
@@ -25,11 +26,10 @@ td > a{
     text-decoration: none;
     color: black;
 }
-tr:nth-child(even){background-color: #f2f2f2}
-tr:nth-child(odd){background-color: #6c6ade}
+.TableRows:nth-child(even){background-color: blanchedalmond}
+.TableRows:nth-child(odd){background-color: tan}
 th {
-    background-color: #4CAF50;
-    color: white;
+    color: darkolivegreen;
 }
 img{
     width: 100px;

@@ -1,3 +1,4 @@
+// Functionality
 $(document).ready(function(){
     $("#ImportUpdates").load("http://127.0.0.1/Home-Server-Website/Framework/Notifications/Toasts/Updates.php");
     $("#ImportDrones").load("http://127.0.0.1/Home-Server-Website/Framework/Notifications/Toasts/Drone.php");
@@ -129,3 +130,22 @@ function InsertNotificationFrame() {
     }
     setTimeout(InsertNotification,4000);
 }
+// Jquery Buttons
+// Menu Buttons
+$("#Close-Notification-Box").click(function() {
+    DeleteNotificationBox("Notifications-Box");
+});
+// Display Mode
+$("#Display-Mode-Light-Grey").click(function() {
+    Display_Mode("Light-Grey");
+});
+$("#Display-Mode-Dark-Grey").click(function() {
+    Display_Mode("Dark-Grey");
+});
+$("#Display-Mode-Normal").click(function() {
+    Display_Mode("Normal");
+});
+// Insert Button
+$("#Insert-Notification").click(function() {
+    InsertNotificationFrame();
+})

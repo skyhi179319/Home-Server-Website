@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="http://127.0.0.1/Home-Server-Website/Framework/Themes/Defualt.css" rel="Stylesheet" />
-<link href="http://127.0.0.1/Home-Server-Website/App/Content/Tables/Images/Table.css" rel="Stylesheet" />
+<link href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Images/Table.css" rel="Stylesheet" />
 <div class="TableDiv">
     <!-- Uploads Images And Event Names From Computer And Mobile Browsers -->
     <table class="DataTable" align="center">
@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $event = $row["event_name"];
         $image_src = $row['image'];
-        echo "<tr>";
+        echo "<tr class='TableRows'>";
         echo "<td>";
         echo "<img src= '$image_src'>";
         echo "</td>";
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     }
 }
 else {
-    echo "<tr>";
+    echo "<tr class='TableRows'>";
     # colspan is full table
     echo "<td colspan='2'>0 results</td>";
     echo "</tr>";

@@ -21,7 +21,7 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $sql = "SELECT * FROM management ";
+        $sql = "SELECT * FROM management";
         $result = $conn->query($sql);
         // Profile Query: Pulling From Main Database
         if ($result->num_rows > 0) {
