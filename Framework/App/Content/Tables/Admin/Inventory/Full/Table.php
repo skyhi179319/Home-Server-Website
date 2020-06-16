@@ -30,8 +30,8 @@
         }
         $sql = "SELECT inventory.Item, inventory.Amount as OnHand,Orders.Amount as Ordered, orders.Status, orders.Cost, product_id.Product_Id
                 FROM inventory
-                INNER JOIN orders ON inventory.Item=Orders.Item
-                INNER JOIN product_id ON inventory.Item=product_id.Item ORDER BY Product_Id ASC";
+                LEFT JOIN orders ON inventory.Item=Orders.Item
+                LEFT JOIN product_id ON inventory.Item=product_id.Item ORDER BY Product_Id ASC";
         $result = $conn->query($sql);
         // Inventory Query: Pulling From Main Database
         if ($result->num_rows > 0) {
@@ -46,9 +46,25 @@
                 echo "<tr class='TableRows'>";
                 echo "<td>$Item</td>";
                 echo "<td>$OnHand</td>";
-                echo "<td>$Ordered</td>";
-                echo "<td>$Status</td>";
-                echo "<td>$$Cost</td>";
+
+                if($Ordered == null){
+                    echo "<td>0</td>";
+                }
+                else{
+                    echo "<td>$Ordered</td>";
+                }
+                if($Status == null){
+                    echo "<td>Unknown</td>";
+                }
+                else{
+                    echo "<td>$Status</td>";
+                }
+                if($Cost == null){
+                    echo "<td>$0.00</td>";
+                }
+                else{
+                    echo "<td>$$Cost</td>";
+                }
                 echo "<td>$Product_Id</td>";
                 echo "</tr>";
             }

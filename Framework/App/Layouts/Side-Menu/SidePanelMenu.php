@@ -24,7 +24,15 @@
                 </ul>
             </li>
             <li>
-                <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Admin/Inventory/Table.php" target="_blank">All INV</a></div>
+                <div>Inventory</div>
+                <ul>
+                    <li>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Admin/Inventory/Table.php" target="_blank">INV</a></div>
+                    </li>
+                    <li>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Admin/Inventory/Full/Table.php" target="_blank">Full INV</a></div>
+                    </li>
+                </ul>
             </li>
         </ul>
     </li>
@@ -56,7 +64,6 @@
                     </li>
                 </ul>
             </li>
-
         </ul>
     </li>
     <li>
