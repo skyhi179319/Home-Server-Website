@@ -78,7 +78,7 @@
         ?>
     </table>
 </div>
-<div class="Product-Id-Div">
+<div class="Product-Search Product-Id-Div">
     <div class="Product-Id-Header">
         <p>Product ID Meaning</p>
     </div>
@@ -97,6 +97,12 @@
             <p>Customers</p>
             <p>500-595</p>
         </div>
+    </div>
+    <div class="Product-Search-Container">
+        <form action="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Admin/Inventory/Full/Search-Response.php" method="get" target="_blank">
+            <input class="inventory_input" type="number" name="Product_Id"/>
+            <input class="submit_button" type='submit' value='Search'>
+        </form>
     </div>
 </div>
 <script src="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Admin/Inventory/Table.js"></script>

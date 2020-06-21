@@ -1,0 +1,91 @@
+.Product-Info{
+    width: 400px;
+    height: 300px;
+    border: 2px solid tan;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#fbffa8c8,#dc9d2c61);
+    background-color: lightyellow;
+    margin: auto;
+}
+.Product-Info > .Product-Id-Header{
+    width: 350px;
+    height: 25px;
+    background-image: linear-gradient(100deg, #fbffb7d6,#dc9d2c61,#fbffb7d6);
+    background-color: tan;
+    border: 2px solid goldenrod;
+    margin: auto;
+    margin-top: 5px;
+}
+.Product-Info > .Product-Id-Header > p{
+    text-align: center;
+    color: saddlebrown;
+    margin-top: 4px;
+}
+.Product-Info > .Product-Container{
+    width: 350px;
+    height: 250px;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#dc9d2c61);
+    background-color: tan;
+    border: 2px solid darkgoldenrod;
+    margin: auto;
+    margin-top: 5px;
+}
+.Product-Info > .Product-Container > .Product-Name{
+    width: 300px;
+    height: 25px;
+    background-image: linear-gradient(100deg, #fbffb7d6,#dc9d2c61,#fbffb7d6);
+    background-color: tan;
+    border: 2px solid #f0ad4e;
+    margin: auto;
+    margin-top: 2px;
+}
+.Product-Info > .Product-Container > .Product-Name > p{
+    text-align: center;
+    color: saddlebrown;
+    margin-top: 4px;
+}
+.Product-Info > .Product-Container > .Product-Info-Container{
+    display: flex;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory{
+    width: 320px;
+    height: 200px;
+    background-image: linear-gradient(100deg, #fbffb7d6,#dc9d2c61,#dc9d2c70,#fbffb7d6);
+    background-color: tan;
+    border: 2px solid burlywood;
+    margin: auto;
+    margin-top: 5px;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory > .Product-Inventory-Left{
+    float: left;
+    margin-left: 20px;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory > .Product-Inventory-Left > .Product-Box{
+    width: 130px;
+    height: 90px;
+    background-image: linear-gradient(100deg, #fbffb7d6,#dc9d2c61,#fbffb7d6);
+    background-color: tan;
+    border: 2px solid wheat;
+    margin: auto;
+    margin-top: 5px;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory > .Product-Inventory-Left > .Product-Box > p{
+    text-align: center;
+    color: saddlebrown;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory > .Product-Inventory-Right{
+    float: right;
+    margin-right: 20px;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory > .Product-Inventory-Right > .Product-Box{
+    width: 130px;
+    height: 90px;
+    background-image: linear-gradient(100deg, #fbffb7d6,#dc9d2c61,#fbffb7d6);
+    background-color: tan;
+    border: 2px solid wheat;
+    margin: auto;
+    margin-top: 5px;
+}
+.Product-Info > .Product-Container > .Product-Info-Container > .Product-Inventory > .Product-Inventory-Right > .Product-Box > p{
+    text-align: center;
+    color: saddlebrown;
+}

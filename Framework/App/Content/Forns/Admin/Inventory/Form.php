@@ -54,7 +54,9 @@ if(isset($_POST['Insert_Record'])){
             while($row = $result->fetch_assoc()) {
                 $Total = $row["Amount"] + $_POST[Amount];
                 $query = "UPDATE inventory SET Amount= '$Total' WHERE Item= '$_POST[Item]'";
+                $query2 = "UPDATE inventory SET Last_Used = '$_POST[Last_Used]' WHERE ITEM = '$_PoST[Item]'";
                 mysqli_query($conn,$query);
+                mysqli_query($conn,$query2);
             }
         }
     }
@@ -67,7 +69,9 @@ if(isset($_POST['Insert_Record'])){
             while($row = $result->fetch_assoc()) {
                 $Total = $row["Amount"] - $_POST[Amount];
                 $query = "UPDATE inventory SET Amount= '$Total' WHERE Item= '$_POST[Item]'";
+                $query2 = "UPDATE inventory SET Last_Used = '$_POST[Last_Used]' WHERE ITEM = '$_PoST[Item]'";
                 mysqli_query($conn,$query);
+                mysqli_query($conn,$query2);
             }
         }
     }
