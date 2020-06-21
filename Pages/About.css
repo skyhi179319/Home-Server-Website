@@ -5,9 +5,10 @@
 .Profiles > .Cards{
     width: 226px;
     height: 214px;
-    background-color: whitesmoke;
-    border: 2px solid red;
+    border: 2px solid tan;
     border-radius: 20px;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#fbffa8c8,#dc9d2c61);
+    background-color: lightyellow;
     margin: auto;
 }
 .Profiles > .Cards > img{

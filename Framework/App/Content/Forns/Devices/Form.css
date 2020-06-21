@@ -1,10 +1,11 @@
 .InputForm{
-    border: 2px solid gold;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
     width: 300px;
     height: 380px;
-    background-color: #f0ad4e;
+    border: 2px solid tan;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#fbffa8c8,#dc9d2c61);
+    background-color: lightyellow;
     margin: auto;
     margin-top: 10px;
 }
