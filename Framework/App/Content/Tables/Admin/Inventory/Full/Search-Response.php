@@ -86,13 +86,15 @@
                 // output data of each row
                 while ($row = $Product_Last_Used_Query->fetch_assoc()) {
                     $Product_Last_Used = $row["Last_Used"];
+                    $Date = new DateTime($Product_Last_Used);
+                    $Date_Format =  $Date->format("m-d-y");
                     if($Product_Last_Used == null){
                         echo "<p>Last Used:</p>";
                         echo "<p>Never</p>";
                     }
                     else{
                         echo "<p>Last Used:</p>";
-                        echo "<p>$Product_Last_Used</p>";
+                        echo "<p>$Date_Format</p>";
                     }
                 }
             }
@@ -103,13 +105,15 @@
                 // output data of each row
                 while ($row = $Product_Last_Ordered_Query->fetch_assoc()) {
                     $Product_Last_Ordered = $row["Last_Ordered"];
+                    $Date = new DateTime($Product_Last_Ordered);
+                    $Date_Format =  $Date->format("m-d-y");
                     if($Product_Last_Ordered == null){
                         echo "<p>Last Ordered:</p>";
                         echo "<p>Unknown</p>";
                     }
                     else{
                         echo "<p>Last Ordered:</p>";
-                        echo "<p>$Product_Last_Ordered</p>";
+                        echo "<p>$Date_Format</p>";
                     }
 
                 }

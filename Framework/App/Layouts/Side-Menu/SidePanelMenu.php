@@ -73,6 +73,17 @@
                     <li>
                         <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Orders/All/Form.php" target="_blank">All Orders</a></div>
                     </li>
+                    <li>
+                        <div>Auto</div>
+                        <ul>
+                            <li>
+                                <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Auto/Add.php" target="_blank">Add</a></div>
+                            </li>
+                            <li>
+                                <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Auto/Subtract.php" target="_blank">Subtract</a></div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li>

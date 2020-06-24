@@ -1,0 +1,30 @@
+.InputForm{
+    width: 300px;
+    height: 160px;
+    border: 2px solid tan;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-image: linear-gradient(100deg, #dc9d2c61, #fbffb7d6,#fbffa8c8,#dc9d2c61);
+    background-color: lightyellow;
+    margin: auto;
+    margin-top: 10px;
+}
+.InputForm > p{
+    color: blue;
+    text-align: center;
+}
+.inventory_input{
+    border: 2px solid navy;
+    width: 94px;
+    margin-left: 7.6em;
+    margin-top: -13px;
+    border-radius: 16px;
+}
+.submit_button{
+    border: 2px solid navy;
+    width: 94px;
+    margin-left: 7.6em;
+    margin-top: 5px;
+    border-radius: 16px;
+    background-color: aquamarine;
+}
