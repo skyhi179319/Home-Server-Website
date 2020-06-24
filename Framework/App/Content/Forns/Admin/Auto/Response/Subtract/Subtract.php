@@ -21,7 +21,7 @@ if(isset($_POST['Insert_Record'])){
             $query = "UPDATE inventory SET Amount= '$Total' WHERE Item= '$_POST[Item]'";
             $Date = new DateTime();
             $Date_Format =  $Date->format("m-d-y");
-            $Last_Used_Query = "UPDATE inventory SEt Last_Used = '$Date_Format' WHERE Item '$_POST[Item]' ";
+            $Last_Used_Query = "UPDATE inventory SEt Last_Used = '$Date_Format' WHERE Item = '$_POST[Item]' ";
             mysqli_query($conn,$query);
             mysqli_query($conn,$Last_Used_Query);
         }
