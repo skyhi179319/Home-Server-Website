@@ -7,7 +7,28 @@
         <div class="Report-Container">
             <div class="Report">
                 <div class="Report-Description">
-                    <p>Do SQL Script Later</p>
+                    <?php
+                        $servername = "127.0.0.1";
+                        $username = "root";
+                        $password = "arizona";
+                        $dbname = "main";
+
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+                        }
+                        $Device_Sql = "SELECT * FROM devices WHERE Device = 'Drone' ORDER BY Date DESC LIMIT 1 ";
+                        $Device_Result = $conn->query($Device_Sql);
+                        if ($Device_Result->num_rows > 0) {
+                            // output data of each row
+                            while ($Device_Row = $Device_Result->fetch_assoc()) {
+                                $Device_Name_Row = $Device_Row['Device'];
+                                echo "<p>$Device_Name_Row</p>";
+                            }
+                        }
+                    ?>
                 </div>
                 <div class="Report-Group">
                     <?php
