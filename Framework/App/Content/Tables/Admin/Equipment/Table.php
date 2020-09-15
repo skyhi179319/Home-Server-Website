@@ -14,6 +14,7 @@
             <th>Start Date</th>
             <th>End Date</th>
             <th>Equipment #</th>
+            <th>Checked Out</th>
         </tr>
         <?php
         $servername = "127.0.0.1";
@@ -27,9 +28,10 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $sql = "SELECT equipment.Equipment_Id , equipment.Equipment_Name, equipment_usage.Equipment_Used_By, equipment_usage.Equipment_Start_Date, equipment_usage.Equipment_End_Date
+        $sql = "SELECT equipment.Equipment_Id , equipment.Equipment_Name, equipment_usage.Equipment_Used_By, equipment_usage.Equipment_Start_Date, equipment_usage.Equipment_End_Date,equipment_check.Equipment_Name, equipment_check.Equipment_Check
                 FROM equipment
-                INNER JOIN equipment_usage ON equipment.Equipment_Name = equipment_usage.Equipment_Name ORDER BY Equipment_Id";
+                LEFT JOIN equipment_usage ON equipment.Equipment_Name = equipment_usage.Equipment_Name
+                LEFT JOIN equipment_check ON equipment.Equipment_Name = equipment_check.Equipment_Name ORDER BY Equipment_Id";
         $result = $conn->query($sql);
         // Inventory Query: Pulling From Main Database
         if ($result->num_rows > 0) {
@@ -42,6 +44,7 @@
                 $Start_Date_Format = new DateTime($Start_Date);
                 $End_Date_Format = new DateTime($End_Date);
                 $Equipment_Id = $row['Equipment_Id'];
+                $Equipment_Checked = $row['Equipment_Check'];
                 echo "<tr class='TableRows'>";
                 echo "<td>$Name</td>";
                 echo "<td>$Used_By</td>";
@@ -52,6 +55,12 @@
                 echo $End_Date_Format->format('m-d-y');
                 echo "</td>";
                 echo "<td>$Equipment_Id</td>";
+                if($Equipment_Checked == 1){
+                    echo "<td>Checked</td>";
+                }
+                else{
+                    echo "<td>Unchecked</td>";
+                }
                 echo "</tr>";
             }
         }

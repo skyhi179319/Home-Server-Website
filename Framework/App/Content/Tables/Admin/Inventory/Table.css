@@ -34,6 +34,7 @@ table {
 th, td {
     text-align: center;
     padding: 8px;
+    font-size: 15px;
 }
 .TableRows:nth-child(even){background-color: blanchedalmond}
 .TableRows:nth-child(odd){background-color: tan}

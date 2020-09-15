@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="http://192.168.0.8/Home-Server-Website/Framework/Themes/Defualt.css" rel="Stylesheet" />
+<link href="http://127.0.0.1/Home-Server-Website/Framework/Themes/Defualt.css" rel="Stylesheet" />
 <link href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Images/Table.css" rel="Stylesheet" />
 <link href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Images/Search-By/Event.css" rel="Stylesheet" />
 <form class="SearchForm" method="post" action="" enctype='multipart/form-data'>
@@ -52,7 +52,7 @@
                 echo "</tr>";
             }
         }
-        echo "<tr class='TableRows'";
+        echo "<tr class='TableRows'>";
         # colspan is full table
         echo "<td colspan='2'><a href='http://127.0.0.1/Home-Server-Website/Framework/App/Content/Tables/Images/Search-By/Event.php'>Refresh</a></td>";
         echo "</tr>";

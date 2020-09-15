@@ -8,7 +8,7 @@
 .Search-Container{
     display: flex;
     margin: auto;
-    width: 546px;
+    width: 596px;
     height: 28px;
     background-image: linear-gradient(100deg, #fbffb7d6,#dc9d2c61,#fbffb7d6);
     background-color: tan;
@@ -17,10 +17,10 @@
 .Search-Container > input{
     width: 140px;
     height: 26px;
-    margin-left: 30px;
+    margin-left: 44px;
 }
 .DataTable{
-    width: 550px;
+    width: 600px;
     height: inherit;
 }
 .TableHeaders{
@@ -34,6 +34,7 @@ table {
 th, td {
     text-align: center;
     padding: 8px;
+    font-size: 15px;
 }
 .TableRows:nth-child(even){background-color: blanchedalmond}
 .TableRows:nth-child(odd){background-color: tan}
