@@ -25,8 +25,7 @@ function showGraph()
                         label: 'Drone',
                         data: Runtime,dates,
                         borderColor: "green",
-                        backgroundColor: "#9ce29c",
-                        fill: "1"
+                        backgroundColor: "#9ce29c"
                     }
                     ]
                 };

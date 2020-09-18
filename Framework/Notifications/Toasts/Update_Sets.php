@@ -12,7 +12,7 @@ function Display(){
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $Cue = "SELECT * FROM updates WHERE Notification_Type = 'Notes' ORDER BY Date_Time DESC LIMIT 1";
+        $Cue = "SELECT * FROM notifications WHERE Notification_Type = 'Notes' ORDER BY Date_Time DESC LIMIT 1";
         $result = $conn->query($Cue);
         // Data Query: Pulling From Main Database
         if ($result->num_rows > 0) {
@@ -39,7 +39,7 @@ function Display(){
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $Cue = "SELECT * FROM updates WHERE Notification_Type = 'Updates' ORDER BY Date_Time DESC LIMIT 1";
+        $Cue = "SELECT * FROM notifications WHERE Notification_Type = 'Updates' ORDER BY Date_Time DESC LIMIT 1";
         $result = $conn->query($Cue);
         // Data Query: Pulling From Main Database
         if ($result->num_rows > 0) {
@@ -63,7 +63,7 @@ function Display(){
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $Cue = "SELECT * FROM updates WHERE Notification_Type = 'Updates' ORDER BY Date_Time DESC LIMIT 1 OFFSET 1";
+        $Cue = "SELECT * FROM notifications WHERE Notification_Type = 'Updates' ORDER BY Date_Time DESC LIMIT 1 OFFSET 1";
         $result = $conn->query($Cue);
         // Data Query: Pulling From Main Database
         if ($result->num_rows > 0) {

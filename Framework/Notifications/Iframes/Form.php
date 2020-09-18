@@ -35,7 +35,7 @@ if ($conn->connect_error) {
 }
 if(isset($_POST['Insert_Record'])){
     // Insert record
-    $query = "insert into updates(Notification,Notification_Type,Issued_By) values('$_POST[Notification]','$_POST[Notification_Type]','$_POST[Notification_Issued_By]')";
+    $query = "insert into notifications(Notification,Notification_Type,Issued_By) values('$_POST[Notification]','$_POST[Notification_Type]','$_POST[Notification_Issued_By]')";
     mysqli_query($conn,$query);
 }
 $conn->close();

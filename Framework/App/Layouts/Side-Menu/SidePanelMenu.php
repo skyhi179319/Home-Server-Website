@@ -95,6 +95,9 @@
                     <li>
                         <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Equipment/Usage/Form.php" target="_blank">Usage</a></div>
                     </li>
+                    <li>
+                        <div><a href="http://127.0.0.1/Home-Server-Website/Framework/App/Content/Forns/Admin/Equipment/Check/Form.php" target="_blank">Check</a></div>
+                    </li>
                 </ul>
             </li>
         </ul>

@@ -41,18 +41,16 @@
                 $Used_By = $row['Equipment_Used_By'];
                 $Start_Date = $row['Equipment_Start_Date'];
                 $End_Date = $row['Equipment_End_Date'];
-                $Start_Date_Format = new DateTime($Start_Date);
-                $End_Date_Format = new DateTime($End_Date);
                 $Equipment_Id = $row['Equipment_Id'];
                 $Equipment_Checked = $row['Equipment_Check'];
                 echo "<tr class='TableRows'>";
                 echo "<td>$Name</td>";
                 echo "<td>$Used_By</td>";
                 echo "<td>";
-                echo $Start_Date_Format->format('m-d-y');
+                echo $Start_Date;
                 echo "</td>";
                 echo "<td>";
-                echo $End_Date_Format->format('m-d-y');
+                echo $End_Date;
                 echo "</td>";
                 echo "<td>$Equipment_Id</td>";
                 if($Equipment_Checked == 1){
